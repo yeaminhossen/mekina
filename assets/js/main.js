@@ -197,18 +197,18 @@
 		// Optional parameters
 		speed:1000,
 		loop: true,
-		slidesPerView: 1,
+		slidesPerView: 3,
 		autoplay: true,
 		spaceBetween: 30,
 		breakpoints: {
 			'1600': {
-				slidesPerView:1,
+				slidesPerView:3,
 			},
 			'1400': {
-				slidesPerView:1,
+				slidesPerView:3,
 			},
 			'1200': {
-				slidesPerView:1,
+				slidesPerView:3,
 			},
 			'992': {
 				slidesPerView: 1,
@@ -425,49 +425,6 @@
 	});
 
 	
-	// 09. Home-1-Slider js
-	$('.tp-testimonial-2-active').slick({
-		prevArrow: '<button type="button" class="slick-prev"><i class="fa-regular fa-arrow-up"></i></button>',
-		nextArrow: '<button type="button" class="slick-next"><i class="fa-regular fa-arrow-down"></i></button>',
-		appendArrows: $(".tp-testimonial-2-arrow"),
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		dots: false,
-		arrows: true,
-		focusOnSelect: true,
-		centerPadding: '0',
-		vertical: true,
-		verticalSwiping: true,
-		centerMode: true,
-		speed:1000,
-		responsive: [
-			{
-				breakpoint: 1200,
-				settings: {
-					slidesToShow: 2,
-				}
-			},
-			{
-				breakpoint: 992,
-				settings: {
-
-				}
-			},
-			{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 1,
-				}
-			},
-			{
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 1,
-				}
-			}
-		]
-	});
-
 	// 13. Swiper Js
 	const brandswiper = new Swiper('.tp-brand-active', {
 		// Optional parameters
