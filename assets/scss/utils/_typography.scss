@@ -1,0 +1,20 @@
+// font url
+
+$font-url: 'https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;900&display=swap" rel="stylesheet';
+
+// font family
+$font-family: (
+    'ff': (
+        'body': "'Maven Pro', sans-serif",
+        'heading': "'Maven Pro', sans-serif",
+        'p': "'Maven Pro', sans-serif",
+        'fontawesome': '"Font Awesome 6 Pro"',
+    )
+);
+// font size
+$font-size: (
+    'fz': (
+        'body': 16px,
+        'p': 16px,
+    )
+);
