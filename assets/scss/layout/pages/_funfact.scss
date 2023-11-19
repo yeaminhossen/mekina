@@ -3,49 +3,92 @@
 /*----------------------------------------*/
 /*  7.10 funfact css start
 /*----------------------------------------*/
-.tp-funfact{
+.tp-funfact {
     &-border {
         border-bottom: 2px solid var(--tp-theme-1);
     }
-    &-number {
-        font-size: 60px;
+    &_shap {
+        position: absolute;
+        top: -77px;
+        transform: rotate(-134deg);
+        right: -80px;
+    }
+    &-icon {
+        width: 110px;
+        height: 110px;
+        background: var(--tp-theme-2);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 97px;
+        border: 7px solid #fff;
+        display: inline-block;
+        margin-bottom: 19px;
+        z-index: 1;
+        position: relative;
+        transition: .3s;
+    }
+
+    &-number,
+    b {
+        font-size: 51px;
         margin-bottom: 0;
         line-height: 1;
-        color: var(--tp-common-white);
-        @media #{$xl}{
+        color: #23252a;
+        transition: .3s;
+        @media #{$xl} {
             font-size: 50px;
-        } 
-        @media #{$lg}{
+        }
+
+        @media #{$lg} {
             font-size: 46px;
-        } 
-        @media #{$md,$xs}{
+        }
+
+        @media #{$md,$xs} {
             font-size: 45px;
-        } 
+        }
+    }
+    &-content-2 {
+        -webkit-clip-path: polygon(0 0, 100% 8%, 100% 96%, 0 100%) !important;
+        clip-path: polygon(0 0, 100% 8%, 100% 96%, 0 100%) !important;
     }
     &-content {
         padding: 50px 15px;
         position: relative;
         z-index: 2;
+        background-color: var(--tp-grey-1);
+        -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
+        clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 97%);
         &:hover {
-            &::after{
+            &::after {
                 opacity: 1;
                 visibility: visible;
                 height: 100%;
             }
+            & h5 { 
+                color: #fff;
+            }
+            & b {
+                color: #fff;
+            }
+            & .tp-funfact-icon {
+                background-color: var(--tp-theme-1);
+            }
         }
-        &::after{
+
+        &::after {
             content: '';
             bottom: 0;
             left: 0;
             height: 0%;
             width: 100%;
-            background-color: #1a1a1a;
+            background-color: var(--tp-grey-2);
             position: absolute;
             z-index: -1;
             opacity: 0;
             visibility: hidden;
             transition: .5s;
         }
+
         & span {
             font-weight: 500;
             color: #a5a5a5;
