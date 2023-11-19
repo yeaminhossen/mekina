@@ -43,21 +43,6 @@
             }
         }
     }
-    &.black-bg {
-        background-color: var(--tp-common-black);
-        &:hover{
-            background-color: var(--tp-theme-1);
-            color: var(--tp-common-white);
-        }
-    }
-    &.white-bg {
-        color: var(--tp-common-black);
-        background-color: var(--tp-common-white);
-        &:hover{
-            background-color: var(--tp-theme-1);
-            color: var(--tp-common-white);
-        }
-    }
 }
 .tp-menu-btn {
     background-color: var(--tp-theme-1);
@@ -77,6 +62,50 @@
     &:hover{
         background-color: var(--tp-common-black);
         color: var(--tp-common-white);
+    }
+  
+}
+
+.tp-btn-2{
+	background-color: var(--tp-grey-1);
+	color: #3a3a3a;
+	padding: 20px 45px;
+	overflow: hidden;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 17px;
+	letter-spacing: 0.03em;
+	text-transform: capitalize;
+	position: relative;
+	z-index: 9;
+	transition: all 0.3s ease-in-out;
+	border-radius: 40px;
+    margin-bottom: 30px;
+  margin-left: 40px;
+    @media #{$xs}{
+        font-size: 14px;
+        height: 50px;
+        line-height: 50px;
+        padding: 0 30px;
+    }
+    & span {
+        & i {
+            color: #ffff;
+            background-color: var(--tp-theme-1);
+            border-radius: 30px;
+            padding: 3px;
+            margin-left: 13px;
+
+        }
+    }
+    &:hover{
+        background-color: var(--tp-theme-1);
+        color: var(--tp-common-white);
+        & span {
+            & i {
+                background-color: var(--tp-theme-2);
+            }
+        }
     }
   
 }
